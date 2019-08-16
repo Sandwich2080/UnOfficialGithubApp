@@ -1,6 +1,6 @@
 # CoderPub
 
-**Named this App to CoderPub**
+Named this App to CoderPub
 
 1. Github is programmer's facebook, **Coder's Pub**.
 2. **Coder Pub**lish his code/mind at Github.
@@ -17,7 +17,7 @@ To be provided later.
 2. Dagger2 for DI
 3. RxJava + Retrofit + OkHttp for RESTful API
 4. Cache network response
-5. Many open source libs, such as Glide, ButterKnift, Looger...
+5. Many open source libs, such as Glide, ButterKnife, Looger...
 
 ## Features
 ### v0.1
@@ -96,5 +96,5 @@ To be provided later.
 * [MarkdownView-Android](https://github.com/mukeshsolanki/MarkdownView-Android)
 
 ## Contact me
-[Github](https://github.com/Sandwich2080)  [Email:androidsandwich@163.com] 
+[Github](https://github.com/Sandwich2080)  or [androidsandwich@163.com] 
 
