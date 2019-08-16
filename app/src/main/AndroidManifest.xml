@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.anly.githubapp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- ali yun push -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+
+    <application
+        android:name=".GithubApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_github"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name=".ui.module.main.LogoSplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.module.main.IntroduceActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.module.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar">
+        </activity>
+        <activity android:name=".ui.module.account.LoginActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".ui.module.repo.SearchActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MaterialTheme.Light.DarkToolbar">
+        </activity>
+
+        <activity android:name=".ui.module.repo.RepoListActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.repo.RepoDetailActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.repo.ReadmeActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.repo.RepoTreeActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.repo.CodeActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ui.module.account.UserActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.repo.UserListActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".ui.module.setting.SettingsActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ui.module.setting.AboutActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name=".compz.service.InitializeService"/>
+
+    </application>
+
+</manifest>
