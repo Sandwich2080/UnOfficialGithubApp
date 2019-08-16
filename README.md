@@ -7,9 +7,6 @@
 
 This is an **unofficial**, **open source**, **base on Github API** Github Client on Android platform, with MVP architecture use Dagger2, RxJava, Retrofit, Okhttp...
 
-[CoderPub](https://github.com/mingjunli/GithubApp)
-[中文说明](http://blog.lmj.wiki/GithubApp/)
-
 ## Preview
 
 To be provided later.
